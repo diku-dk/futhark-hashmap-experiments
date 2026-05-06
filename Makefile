@@ -32,14 +32,15 @@ data/%_words.txt: random_words
 	$(NVCC) $< $(CFLAGS) -o $@
 
 clean:
-	rm -r data \
-              host_bulk_example \
-	      intmap_cuco \
-	      random_words \
-	      strmap_cuco \
-	      strmap \
-	      intmap \
-	      strmap.c \
-	      intmap.c \
-	      intmap.json \
-	      strmap.json 2>/dev/null || exit 0
+	rm -rf data \
+	       mkdata \
+	       host_bulk_example \
+	       intmap_cuco \
+	       random_words \
+	       strmap_cuco \
+	       strmap \
+	       intmap \
+	       strmap.c \
+	       intmap.c \
+	       intmap.json \
+	       strmap.json
